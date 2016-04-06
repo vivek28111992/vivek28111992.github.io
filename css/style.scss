@@ -1,0 +1,113 @@
+body {
+  margin: 0%;
+  padding: 0%; 
+}
+
+a{
+	text-decoration:none;
+}
+
+$white-color: #fff;
+$font-14: 14px;
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.center_width{
+  width:80%;
+  margin:0% auto;
+}
+
+header {
+    background: #2d2d2d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: $white-color;
+}
+
+nav#mainNav {
+	
+  text-align:center;
+
+  ul{
+    margin:0%;
+    padding:0%;
+  }
+
+	li{
+	font-size:$font-14;
+	display:inline-block;
+	text-transform:uppercase;
+  padding: 3% 2%;
+}
+
+	a{
+	color: $white-color;
+	display: block;
+	position: relative;
+}
+
+}
+
+.header_div{
+  width:50%;
+  margin:0 auto;
+}
+  
+.slider_full_image img{
+  width:100%;
+  height: 680px;
+}  
+
+.slider_section{
+  position:relative;
+}
+
+.slider_text{
+  position:absolute;
+  top:42%;
+  left:38%;
+}
+
+.element{
+  font-size:32px;
+  color: $white-color;
+  font-weight:600;  
+}
+
+.i_span{
+  font-size:56px;
+  color: $white-color;
+  font-weight:600;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    @extend .element;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*# sourceMappingURL=style.scss.map */
