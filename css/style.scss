@@ -14,6 +14,7 @@ $font-14: 14px;
   position: relative;
   width: 100%;
   overflow-x: hidden; 
+  overflow-y: hidden;
 }
 
 .center_width{
@@ -27,7 +28,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     color: $white-color;
 }
 
@@ -133,9 +134,7 @@ nav#mainNav {
 .profile_img{
   width: 19%;
   margin: 3% auto;
-  border: 1px solid #dcdcdc;
   border-radius: 50%;
-  padding: 5px 0px 1px 6px;
   position: relative;
 }
 
@@ -175,16 +174,16 @@ nav#mainNav {
     color: $white-color;
     display: block;
     font-size: 15px;
-    height: 40px;
+    height: 60px;
     line-height: 40px;
     margin: 0 auto;
-    width: 40px;
+    width: 60px;
     text-align: center;
 }
 
 .cv_side{
   position: absolute;
-  top: 47%;
+  top: 43%;
   left: 25%;
 }
 
@@ -194,8 +193,132 @@ nav#mainNav {
 
 .follow_side{
   position: absolute;
-  top: 48%;
+  top: 43%;
   right: 25%;
+}
+
+.divider {
+    margin: 5% auto 0; 
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.divider span::before {
+    border-bottom: 1px dashed #EFEFEF;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 0;
+}
+
+.divider span i {
+    background: #FFFFFF;
+    color: #2d2d2d;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    z-index: 1;
+}   
+
+/********** skill ***********/
+.innerTitle {
+    text-align: center;
+    margin-top: 3%;
+}
+.innerTitle h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    margin: 0%;
+}
+.innerTitle p {
+    font-size: $font-14;
+}
+.skill{
+  @extend .about;
+}
+.logo_d{
+  text-align:center;
+  i{
+    font-size:120px;
+  }
+}
+.logo_d{
+  img{
+    width:33%;
+  }
+}
+.skill_4{
+  margin:2% 0%;
+}
+
+$boxWidth: 250px;
+$translateX: 110px;
+$translateY: 110px;
+$time: 3.5s;
+$scale: 1.2;
+ 
+.preload-juggle {
+  height: $boxWidth;
+  width: 21%;
+  margin: 0 auto;
+  
+  div {
+    position: absolute;
+    margin-top: $boxWidth/2;
+    margin-left: $boxWidth/2;
+    animation: juggle $time linear infinite;
+
+    img{
+      width:60px;
+    }
+  }
+  
+  div:nth-child(1) {
+    animation-delay: -$time/3;
+  }
+  
+  div:nth-child(2) {
+    animation-delay: -$time/1.5;
+  }
+  
+} 
+ 
+@keyframes juggle {
+  0% { 
+    transform: translateX(0px) translateY(0px); 
+  }
+  12.5% { 
+    transform: translateX($translateX/2) translateY(-$translateY) scale($scale);
+   }
+  25% { 
+    transform: translateX($translateX) translateY(0px) ; 
+    animation-timing-function: ease-out;  }
+  37.5% { 
+    transform: translateX($translateX/2) translateY($translateY);  
+  }
+  50% { 
+    transform: translateX(0px) translateY(0px);
+  }
+  62.5% { 
+    transform: translateX(-$translateX/2) translateY(-$translateY) scale($scale); 
+    animation-timing-function: ease-in;
+  }
+  75% { 
+    transform: translateX(-$translateX) translateY(0px); 
+    animation-timing-function: ease-out;
+  }
+  87.5% { 
+    transform: translateX(-$translateX/2) translateY($translateY);
+  }
+  100% { 
+    transform: translateX(0px) translateY(0px); 
+  }
 }
 
 /*# sourceMappingURL=style.scss.map */

@@ -8,7 +8,8 @@ a {
 #wrapper {
   position: relative;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 .center_width {
   width: 80%;
@@ -20,7 +21,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   color: #fff; }
 
 nav#mainNav {
@@ -92,7 +93,7 @@ nav#mainNav {
   100% {
     opacity: 1; } }
 /******* About Me ******/
-.about {
+.about, .skill {
   padding: 3% 0%;
   width: 84%;
   margin: 0% auto;
@@ -114,9 +115,7 @@ nav#mainNav {
 .profile_img {
   width: 19%;
   margin: 3% auto;
-  border: 1px solid #dcdcdc;
   border-radius: 50%;
-  padding: 5px 0px 1px 6px;
   position: relative; }
 
 .profile_img::before {
@@ -156,15 +155,15 @@ nav#mainNav {
   color: #fff;
   display: block;
   font-size: 15px;
-  height: 40px;
+  height: 60px;
   line-height: 40px;
   margin: 0 auto;
-  width: 40px;
+  width: 60px;
   text-align: center; }
 
 .cv_side {
   position: absolute;
-  top: 47%;
+  top: 43%;
   left: 25%; }
 
 .cv_text h4 {
@@ -172,9 +171,97 @@ nav#mainNav {
 
 .follow_side {
   position: absolute;
-  top: 48%;
+  top: 43%;
   right: 25%; }
 
+.divider {
+  margin: 5% auto 0;
+  position: relative;
+  text-align: center;
+  width: 50%; }
+
+.divider span::before {
+  border-bottom: 1px dashed #EFEFEF;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 0; }
+
+.divider span i {
+  background: #FFFFFF;
+  color: #2d2d2d;
+  font-size: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  z-index: 1; }
+
+/********** skill ***********/
+.innerTitle {
+  text-align: center;
+  margin-top: 3%; }
+
+.innerTitle h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  margin: 0%; }
+
+.innerTitle p {
+  font-size: 14px; }
+
+.logo_d {
+  text-align: center; }
+  .logo_d i {
+    font-size: 120px; }
+
+.logo_d img {
+  width: 33%; }
+
+.skill_4 {
+  margin: 2% 0%; }
+
+.preload-juggle {
+  height: 250px;
+  width: 21%;
+  margin: 0 auto; }
+  .preload-juggle div {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 125px;
+    animation: juggle 3.5s linear infinite; }
+    .preload-juggle div img {
+      width: 60px; }
+  .preload-juggle div:nth-child(1) {
+    animation-delay: -1.16667s; }
+  .preload-juggle div:nth-child(2) {
+    animation-delay: -2.33333s; }
+
+@keyframes juggle {
+  0% {
+    transform: translateX(0px) translateY(0px); }
+  12.5% {
+    transform: translateX(55px) translateY(-110px) scale(1.2); }
+  25% {
+    transform: translateX(110px) translateY(0px);
+    animation-timing-function: ease-out; }
+  37.5% {
+    transform: translateX(55px) translateY(110px); }
+  50% {
+    transform: translateX(0px) translateY(0px); }
+  62.5% {
+    transform: translateX(-55px) translateY(-110px) scale(1.2);
+    animation-timing-function: ease-in; }
+  75% {
+    transform: translateX(-110px) translateY(0px);
+    animation-timing-function: ease-out; }
+  87.5% {
+    transform: translateX(-55px) translateY(110px); }
+  100% {
+    transform: translateX(0px) translateY(0px); } }
 /*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
