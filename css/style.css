@@ -94,7 +94,7 @@ nav#mainNav {
     opacity: 1; } }
 /******* About Me ******/
 .about, .skill {
-  padding: 3% 0%;
+  padding: 3% 0% 2%;
   width: 84%;
   margin: 0% auto;
   position: relative; }
@@ -200,68 +200,71 @@ nav#mainNav {
   z-index: 1; }
 
 /********** skill ***********/
-.innerTitle {
+.innerTitle, .motivated_div {
   text-align: center;
   margin-top: 3%; }
 
-.innerTitle h1 {
+.innerTitle h1, .motivated_div h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: #2d2d2d;
   margin: 0%; }
 
-.innerTitle p {
+.innerTitle p, .motivated_div p {
   font-size: 14px; }
 
 .logo_d {
   text-align: center; }
   .logo_d i {
-    font-size: 120px; }
+    font-size: 100px; }
 
 .logo_d img {
-  width: 33%; }
+  width: 27%; }
 
 .skill_4 {
   margin: 2% 0%; }
 
 .preload-juggle {
   height: 250px;
-  width: 21%;
-  margin: 0 auto; }
+  width: 25%;
+  margin: 0 auto;
+  background: transparent url("../image/juggling.png") no-repeat;
+  background-position: 50% 100%; }
   .preload-juggle div {
     position: absolute;
-    margin-top: 125px;
+    margin-top: 83.33333px;
     margin-left: 125px;
-    animation: juggle 3.5s linear infinite; }
+    animation: juggle 2.1s linear infinite; }
     .preload-juggle div img {
-      width: 60px; }
+      width: 40px; }
   .preload-juggle div:nth-child(1) {
-    animation-delay: -1.16667s; }
+    animation-delay: -0.7s; }
   .preload-juggle div:nth-child(2) {
-    animation-delay: -2.33333s; }
+    animation-delay: -1.4s; }
 
 @keyframes juggle {
   0% {
     transform: translateX(0px) translateY(0px); }
   12.5% {
-    transform: translateX(55px) translateY(-110px) scale(1.2); }
+    transform: translateX(40px) translateY(-82px) scale(1.1); }
   25% {
-    transform: translateX(110px) translateY(0px);
+    transform: translateX(80px) translateY(0px);
     animation-timing-function: ease-out; }
   37.5% {
-    transform: translateX(55px) translateY(110px); }
+    transform: translateX(40px) translateY(82px); }
   50% {
     transform: translateX(0px) translateY(0px); }
   62.5% {
-    transform: translateX(-55px) translateY(-110px) scale(1.2);
+    transform: translateX(-40px) translateY(-82px) scale(1.1);
     animation-timing-function: ease-in; }
   75% {
-    transform: translateX(-110px) translateY(0px);
+    transform: translateX(-80px) translateY(0px);
     animation-timing-function: ease-out; }
   87.5% {
-    transform: translateX(-55px) translateY(110px); }
+    transform: translateX(-40px) translateY(82px); }
   100% {
     transform: translateX(0px) translateY(0px); } }
+/********* quotes ************/
 /*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */

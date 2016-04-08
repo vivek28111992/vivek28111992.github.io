@@ -113,7 +113,7 @@ nav#mainNav {
 
 /******* About Me ******/
 .about{
-  padding: 3% 0%;
+  padding: 3% 0% 2%;
   width: 84%;
   margin: 0% auto;
   position: relative;
@@ -245,12 +245,12 @@ nav#mainNav {
 .logo_d{
   text-align:center;
   i{
-    font-size:120px;
+    font-size:100px;
   }
 }
 .logo_d{
   img{
-    width:33%;
+    width:27%;
   }
 }
 .skill_4{
@@ -258,24 +258,26 @@ nav#mainNav {
 }
 
 $boxWidth: 250px;
-$translateX: 110px;
-$translateY: 110px;
-$time: 3.5s;
-$scale: 1.2;
+$translateX: 80px;
+$translateY: 82px;
+$time: 2.1s;
+$scale: 1.1;
  
 .preload-juggle {
   height: $boxWidth;
-  width: 21%;
+  width: 25%;
   margin: 0 auto;
+  background: transparent url('../image/juggling.png')no-repeat;
+  background-position: 50% 100%;
   
   div {
     position: absolute;
-    margin-top: $boxWidth/2;
+    margin-top: $boxWidth/3;
     margin-left: $boxWidth/2;
     animation: juggle $time linear infinite;
 
     img{
-      width:60px;
+      width:40px; 
     }
   }
   
@@ -320,5 +322,11 @@ $scale: 1.2;
     transform: translateX(0px) translateY(0px); 
   }
 }
+
+/********* quotes ************/
+.motivated_div{
+  @extend .innerTitle;
+}
+
 
 /*# sourceMappingURL=style.scss.map */
