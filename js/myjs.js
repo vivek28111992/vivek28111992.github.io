@@ -16,4 +16,17 @@ $(document).ready(function(){
   	auto:true
   	
   });
+
+  $('.per_project').hide();
+  $('#input').click(function(){
+  	  	if($(this).is(':checked')){
+  		$('.per_project').show();
+  		$('.pro_projects').hide();
+  	}
+  	else{
+  		$('.per_project').hide();
+  		$('.pro_projects').show();
+  	}
+  });
+
 });

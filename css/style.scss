@@ -28,7 +28,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 25;
     color: $white-color;
 }
 
@@ -344,6 +344,109 @@ $scale: 1.1;
 }
 .project{
   @extend .skill;
+}
+
+.toogle{
+  width:45%;
+  margin:3% auto 2%;
+}
+
+//NOTE: Change these variables in order to change the toggle switch's appearance
+$input-size:         80px;
+$color-bg-inactive:  #3fcfef;
+$color-bg-active:    #fb3434;
+$color-round:        #fff;
+$color-border:       #ddd;
+$color-label:       #000;
+$border-width:    1px;
+
+[data-am-toggle-switch] {
+  text-transform: uppercase;
+  color: $color-label;
+  font-size: ($input-size / 5);
+  cursor: default;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+        user-select: none;
+  input {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    &:checked {
+      + label {
+        background-color: $color-bg-active;
+        &:before {
+          margin-left: ($input-size / 2);
+        }
+        &:after {
+          left: -20px;
+        }
+      }
+    }
+  }
+  label {
+    width: $input-size;
+    height: ($input-size / 2);
+    background-color: $color-bg-inactive;
+    border: $border-width solid $color-border;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: ($input-size / 2);
+    position: relative;
+    margin-left: ($input-size / 10);
+    margin-right: ($input-size / 10);
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: background-color 0.2s ease;
+      -moz-transition: background-color 0.2s ease;
+        -o-transition: background-color 0.2s ease;
+          transition: background-color 0.2s ease;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: -1px;
+      width: ($input-size / 2);
+      height: ($input-size / 2);
+      border-radius: 50%;
+      background-color: $color-round;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      z-index: 20;
+      -webkit-transition: margin-left 0.2s ease;
+        -moz-transition: margin-left 0.2s ease;
+          -o-transition: margin-left 0.2s ease;
+            transition: margin-left 0.2s ease;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: $input-size;
+      height: ($input-size / 2);
+      background-color: $color-bg-active;
+      position: absolute;
+      left: calc(-100% + 20px);
+      top: 0;
+      z-index: 10;
+      -webkit-transition: left 0.2s ease;
+        -moz-transition: left 0.2s ease;
+          -o-transition: left 0.2s ease;
+            transition: left 0.2s ease; 
+    }
+  }
+}
+
+.pro_projects{
+  img{
+    width:100%;
+    height:350px;
+    border:1px solid #dcdcdc;
+    margin-bottom:7%;
+  }
+}
+.per_project{
+  @extend .pro_projects;
 }
 
 /*# sourceMappingURL=style.scss.map */
