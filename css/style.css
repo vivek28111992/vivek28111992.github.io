@@ -93,7 +93,7 @@ nav#mainNav {
   100% {
     opacity: 1; } }
 /******* About Me ******/
-.about, .skill {
+.about, .skill, .quotes {
   padding: 3% 0% 2%;
   width: 84%;
   margin: 0% auto;
@@ -228,7 +228,7 @@ nav#mainNav {
   height: 250px;
   width: 25%;
   margin: 0 auto;
-  background: transparent url("../image/juggling.png") no-repeat;
+  background: transparent url("../image/juggling.gif") no-repeat;
   background-position: 50% 100%; }
   .preload-juggle div {
     position: absolute;
@@ -265,6 +265,9 @@ nav#mainNav {
   100% {
     transform: translateX(0px) translateY(0px); } }
 /********* quotes ************/
+.quote_slider_div .bx-wrapper .bx-viewport {
+  left: 0px; }
+
 /*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */

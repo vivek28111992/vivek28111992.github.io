@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 
   $(function(){
       $(".element").typed({
@@ -8,3 +8,12 @@
         typeSpeed: 0
       });
   });
+
+
+  $('.bxslider').bxSlider({
+  			
+  	pager:false,
+  	auto:true
+  	
+  });
+});
