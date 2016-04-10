@@ -73,7 +73,7 @@ nav#mainNav {
 .slider_text{
   position:absolute;
   top:42%;
-  left:38%;
+  left:37%;
 }
 
 .element{
@@ -336,6 +336,14 @@ $scale: 1.1;
       left:0px;
     }
   }
+}
+
+/************ projects **********/
+.project_heading{
+  @extend .innerTitle;
+}
+.project{
+  @extend .skill;
 }
 
 /*# sourceMappingURL=style.scss.map */
