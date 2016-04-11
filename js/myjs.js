@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $(function(){
       $(".element").typed({
-        strings: ["is Web Developer.", "like js.", "love football."],
+        strings: ["is Web Developer.", "likes js.", "loves football."],
         loop: true,
         backDelay: 1000,
         typeSpeed: 0
