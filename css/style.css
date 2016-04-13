@@ -357,6 +357,38 @@ nav#mainNav {
 .contact_heading {
   text-align: center; }
 
+.form_div {
+  width: 72%;
+  margin: 5% auto 3%; }
+
+#name, #email {
+  height: 45px;
+  width: 29%;
+  border: 1px solid #dcdcdc;
+  padding: 1%;
+  margin-right: 6%;
+  margin-bottom: 3%; }
+
+#contact_no {
+  height: 45px;
+  width: 29%;
+  border: 1px solid #dcdcdc;
+  padding: 1%;
+  margin-bottom: 3%; }
+
+#message {
+  height: 180px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  padding: 1%;
+  margin-bottom: 3%; }
+
+#submit {
+  font-size: 45px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer; }
+
 /*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
