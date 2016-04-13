@@ -44,6 +44,8 @@ $(document).ready(function(){
 				dataType: "json",
 			});
 			event.preventDefault();
+			$('#thank_you_msg').show().delay(1000).fadeOut();
+			return false;
 	}); 
 
 });
