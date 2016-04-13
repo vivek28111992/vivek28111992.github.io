@@ -12,6 +12,7 @@
 
 		<meta name="author" content="Vivek Pawar, Web Developer, HTML5, CSS3, SASS, JAVASCRIPT, WORDPRESS, PHP">
 
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<!-- bxSlider CSS file -->
@@ -213,20 +214,18 @@
 			<p>A players like to work with A players - Steve Jobs</p>
 		</div>
 		<div class="form_div">
-			<form action="https://formspree.io/pawarvivek29@gmail.com" method="POST" name="contact_form" id="contact_form">
-				<input type="text" name="name" id="name" placeholder="Name*">
-				<input type="email" name="email" id="email" placeholder="Email*">
-				<input type="tel" name="contact_no" id="contact_no" placeholder="Mobile No*">
-				<textarea name="message" id="message" placeholder="Message*"></textarea>
-				<!--<input type="submit" value="submit">-->
-				<i class="fa fa-paper-plane" aria-hidden="true" id="submit" value="submit"></i>
+			<form method="POST" name="contact_form" id="contact_form">
+				<input type="text" name="name" id="name" placeholder="Name*" required="true">
+				<input type="email" name="email" id="email" placeholder="Email*" required="true">
+				<input type="tel" name="contact_no" id="contact_no" placeholder="Mobile No*" required="true">
+				<textarea name="message" id="message" placeholder="Message*" required="true"></textarea>
+				<input type="submit" value="submit" id="submit">
 			</form>
 		</div>
 	</section>
 	<footer>
 		<p>I would like to thank Matt</p>
 	</footer>
-
 </div>
 <script src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

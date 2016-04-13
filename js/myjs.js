@@ -29,4 +29,21 @@ $(document).ready(function(){
   	}
 });
 
+  	$("#contact_form").submit(function(event)
+	{
+    var formData = {
+        'name'              : $('input[name=name]').val(),
+        'contact_no'         : $('input[name=contact_no]').val(),		
+        'email'             : $('input[name=email]').val(),
+        'message'             : $('textarea[name=message]').val()
+    };
+			$.ajax({
+				type:'post',
+				data:formData,
+				url:'https://formspree.io/pawarvivek29@gmail.com',
+				dataType: "json",
+			});
+			event.preventDefault();
+	}); 
+
 });
