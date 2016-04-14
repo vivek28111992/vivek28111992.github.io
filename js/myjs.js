@@ -44,8 +44,29 @@ $(document).ready(function(){
 				dataType: "json",
 			});
 			event.preventDefault();
-			$('#thank_you_msg').show().delay(1000).fadeOut();
+			$('#thank_you_msg').show().delay(3500).fadeOut();		
 			return false;
 	}); 
+
+	$("#about_li").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".about").offset().top},
+        1000);
+	});
+	$("#resume_li").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".profile_img").offset().top},
+        1000);
+	});
+	$("#portfolio_li").click(function(){
+		$('html,body').animate({
+			scrollTop: $(".project").offset().top},
+			1000);
+	});
+	$("#contact_li").click(function(){
+		$('html,body').animate({
+			scrollTop: $(".contact").offset().top},
+			1000);
+	});
 
 });

@@ -17,7 +17,7 @@ a {
   margin: 0% auto; }
 
 header {
-  background: #2d2d2d;
+  background-color: #00bcd4;
   position: fixed;
   width: 100%;
   top: 0;
@@ -39,6 +39,8 @@ nav#mainNav {
     color: #fff;
     display: block;
     position: relative; }
+    nav#mainNav a:hover {
+      text-decoration: none; }
 
 .header_div {
   width: 50%;
@@ -53,8 +55,20 @@ nav#mainNav {
 
 .slider_text {
   position: absolute;
-  top: 42%;
-  left: 37%; }
+  top: 44%;
+  left: 36%;
+  z-index: 2; }
+
+.slider_layer::after {
+  content: "\a ";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(rgba(0, 188, 212, 0.85), rgba(0, 188, 212, 0.85));
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  opacity: 1; }
 
 .element, .typed-cursor {
   font-size: 32px;
@@ -95,7 +109,7 @@ nav#mainNav {
     opacity: 1; } }
 /******* About Me ******/
 .about, .skill, .quotes, .project, .contact {
-  padding: 3% 0% 2%;
+  padding: 5% 0% 0%;
   width: 84%;
   margin: 0% auto;
   position: relative; }
@@ -143,7 +157,7 @@ nav#mainNav {
   right: 50%; }
 
 .ico a {
-  background: #2D2D2D;
+  background: #0097a7;
   border: 10px solid #FFFFFF;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -164,7 +178,7 @@ nav#mainNav {
 
 .cv_side {
   position: absolute;
-  top: 43%;
+  top: 51%;
   left: 25%; }
 
 .cv_text h4 {
@@ -172,7 +186,7 @@ nav#mainNav {
 
 .follow_side {
   position: absolute;
-  top: 43%;
+  top: 51%;
   right: 25%; }
 
 .divider {
@@ -193,7 +207,7 @@ nav#mainNav {
 
 .divider span i {
   background: #FFFFFF;
-  color: #2d2d2d;
+  color: #0097a7;
   font-size: 15px;
   padding-left: 5px;
   padding-right: 5px;
@@ -203,7 +217,7 @@ nav#mainNav {
 /********** skill ***********/
 .innerTitle, .motivated_div, .project_heading {
   text-align: center;
-  margin-top: 3%; }
+  margin-bottom: 3%; }
 
 .innerTitle h1, .motivated_div h1, .project_heading h1 {
   font-size: 30px;
@@ -212,12 +226,31 @@ nav#mainNav {
   margin: 0%; }
 
 .innerTitle p, .motivated_div p, .project_heading p {
-  font-size: 14px; }
+  font-size: 14px;
+  margin-top: 1%; }
+
+.skill_logo {
+  margin-bottom: 2%; }
 
 .logo_d {
   text-align: center; }
   .logo_d i {
     font-size: 100px; }
+
+.fa-html5 {
+  color: #f16929; }
+  .fa-html5:hover {
+    color: #e44d26; }
+
+.fa-css3 {
+  color: #2ba8e0; }
+  .fa-css3:hover {
+    color: #0270bb; }
+
+.fa-wordpress {
+  color: #1d88be; }
+  .fa-wordpress:hover {
+    color: #01779d; }
 
 .logo_d img {
   width: 27%; }
@@ -357,6 +390,8 @@ nav#mainNav {
 /***************contact me**********/
 .contact_heading {
   text-align: center; }
+  .contact_heading h1 {
+    margin: 0%; }
 
 .form_div {
   width: 72%;
