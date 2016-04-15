@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$(document).on("scroll", onScroll);
+
   $(function(){
       $(".element").typed({
         strings: ["is Web Developer.", "likes js.", "loves football."],
@@ -53,9 +55,9 @@ $(document).ready(function(){
         scrollTop: $(".about").offset().top},
         1000);
 	});
-	$("#resume_li").click(function() {
+	$("#skill_li").click(function() {
     $('html,body').animate({
-        scrollTop: $(".profile_img").offset().top},
+        scrollTop: $(".skill").offset().top},
         1000);
 	});
 	$("#portfolio_li").click(function(){
@@ -69,4 +71,53 @@ $(document).ready(function(){
 			1000);
 	});
 
+		 // hide #back-top first
+	 $("#back-top").hide();
+	 
+	 // fade in #back-top
+	 $(function () {
+	  $(window).scroll(function () {
+	   if ($(this).scrollTop() > 100) {
+		$('#back-top').fadeIn();
+	   } else {
+		$('#back-top').fadeOut();
+	   }
+	  });
+	  // scroll body to 0px on click
+	  $('#back-top').click(function () {
+	   $('body,html').animate({
+		scrollTop: 0
+	   }, 800);
+	   return false;
+	  });
+	 });
+
+var room = document.getElementById("room"),
+    checkbox = document.getElementById("checkbox");
+
+function toggleSwitch(){
+	  if (checkbox.checked){
+      room.className="room on";
+    }else{
+      room.className="room";
+    }
+}
+
+checkbox.addEventListener("click", toggleSwitch);
+
 });
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#mainNav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#mainNav ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
