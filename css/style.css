@@ -456,6 +456,7 @@ nav#mainNav {
   left: 37%;
   box-shadow: 0px 0px 6px #dcdcdc;
   padding: 1% 2% 2%;
+  background-color: #fff;
   display: none; }
 
 #submit {

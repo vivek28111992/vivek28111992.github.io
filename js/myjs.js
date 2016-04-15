@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$(document).on("scroll", onScroll);
+	
 
   $(function(){
       $(".element").typed({
@@ -87,10 +87,12 @@ $(document).ready(function(){
 	  $('#back-top').click(function () {
 	   $('body,html').animate({
 		scrollTop: 0
-	   }, 800);
+	   }, 1000);
 	   return false;
 	  });
 	 });
+
+	 
 
 var room = document.getElementById("room"),
     checkbox = document.getElementById("checkbox");
@@ -104,6 +106,8 @@ function toggleSwitch(){
 }
 
 checkbox.addEventListener("click", toggleSwitch);
+
+	$(document).on("scroll", onScroll);
 
 });
 
